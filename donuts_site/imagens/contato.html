@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head>
+         <title> CONTATO </title>
+	      <meta charset="utf-8"/> 
+		 <meta name="viewport" content="width=device-width, inicial-scale=1"/> 
+		 <link rel="icon"  type="image/png"      href="imagens/donutss.png"/> 
+		 <link rel="stylesheet" type="text/css" href="estilo.css"> 
+		 <script language="javascript" type="text/javascript">
+    function validar(){
+    var nome=form1.nome.value;
+    var email=form1.email.value
+	var telefone=form1.telefone.value;
+   
+
+    if (nome ==""){
+    alert ('digite o seu nome');
+    form1.nome.focus();
+    return false;
+    }
+
+    if (email ==""){
+    alert ('digite o seu e-mail');
+    form1.email.focus();
+    return false;
+    }
+	if (telefone ==""){
+   alert ('preencha o campo com seu telefone');
+   form1.telefone.focus();
+   return false;
+   }
+   }
+   </script>
+	</head>
+		<body>
+	   <div id="header">
+				 <ul id="nav">
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="donuts.html">Donuts</a></li>
+					<li><a href="sabores.html">Sabores</a></li>
+					<li><a href="contato.html">Peça já o seu!</a></li>
+				 </ul>
+		  </div>
+		  </div>
+	  	  <div id="section_c">
+			 <div class ="contato">
+			   <h1> Deixe suas informações e ganhe cupons para comprar qualquer donut!</h1>
+					<form name="contato" action="#" method="post">  
+					 <table border="0">
+					  <tr><td> <label>Nome</td></tr>
+					  <tr><td><input type="text " required ="required" name="nome" id="text1" size="50" placeholder="Preencha aqui o seu nome!" autofocus /></label></td> </tr>   
+					  <tr><td><label>E-mail</td></tr>
+					 <tr><td><input type="email" required ="required" name="email" id="text2" size="50" placeholder="Preencha aqui o seu email!" autofocus /></label> </td></tr>
+					 <tr><td><label>Telefone</td></tr>
+					 <tr><td><input type="telefone" required ="required" name="email" id="text3" size="50" placeholder="(**)*****-****" autofocus /></label> </td></tr>
+					 <tr> <td> <label>Reclamações?</td></tr>
+					 <tr>	 <td><textarea  id="textarea" name="textarea "   rows ="10" cols="52"   placeholder="Deixe aqui um comentário:"></textarea></td></label></tr>
+				     <tr> <td><input type="submit"  value="Enviar"></td> </tr>
+			   </table>
+			   </form>
+		   </div>
+		   </div>
+		   <div id="footer3">
+		<p>Mariana Freitas 2023- &copy Todos os direitos reservados </p>
+	</div>
+	
+	</body>
+</html>
